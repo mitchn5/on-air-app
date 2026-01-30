@@ -36,3 +36,37 @@
     transform: rotate(360deg);
   }
 }
+
+.topnav {
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  background-color: #333;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.8;
+}
+
+.main-container {
+  top: 160px;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.content-container {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 10px;
+  position: relative;
+  text-align: center;
+}
+
+.login-button {
+  min-width: 100px;
+  padding: 5px;
+}
