@@ -2,40 +2,16 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+:root {
+  --mitch-background: #9D1CD9;
+  --amaya-background: #0D6B18;
+  --background-middle: #C77A57;
+  --background-split: 70%;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
+  --mitch-on-air: red;
+  --mitch-off-air: lightgreen;
+  --amaya-on-air: red;
+  --amaya-off-air: lightgreen;
 }
 
 .topnav {
@@ -62,7 +38,7 @@
   width: 100%;
   height: auto;
   margin: 0 auto;
-  padding: 10px;
+  /* padding: 10px; */
   position: relative;
   text-align: center;
 }
@@ -82,4 +58,49 @@
 .login-container button {
   min-width: 100px;
   margin: 15px;
+}
+
+.home-background {
+  /* background: linear-gradient(20deg, var(--mitch-background) 0%, var(--background-middle) var(--background-split), var(--amaya-background) 100%); */
+  /* background: linear-gradient(315deg, rgb(252, 142, 197) 0%, rgb(255, 141, 211) 25%, rgb(255, 161, 216) 50%, rgb(255, 193, 210) 75%, rgb(255, 224, 195) 100%); */
+  background: linear-gradient(90deg, rgb(217, 179, 226) 0%, rgb(210, 164, 227) 8.333%, rgb(202, 148, 226) 16.667%, rgb(193, 131, 225) 25%, rgb(182, 115, 222) 33.333%, rgb(170, 99, 218) 41.667%, rgb(157, 84, 213) 50%, rgb(144, 71, 206) 58.333%, rgb(131, 60, 199) 66.667%, rgb(117, 51, 191) 75%, rgb(105, 46, 183) 83.333%, rgb(93, 43, 174) 91.667%, rgb(82, 44, 164) 100%);
+}
+
+.home-container {
+  top: 200px;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.status-button-container {
+  margin-bottom: 20px;
+}
+
+.status-button-container button {
+  border-width: 8px;
+}
+
+.other-status-button {
+  border-radius: 100px;
+  min-width: 200px;
+  min-height: 200px;
+  width: 50%;
+}
+
+.your-status-button {
+  border-radius: 10px;
+  min-width: 200px;
+  min-height: 50px;
+  width: 40%;
+}
+
+.mitch-button .on-air {
+  background: var(--mitch-on-air);
+  font-weight: bold;
+}
+
+.mitch-button .off-air {
+  background: var(--mitch-off-air);
+  font-weight: lighter;
 }
